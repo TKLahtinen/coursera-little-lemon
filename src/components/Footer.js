@@ -3,40 +3,16 @@ import React from 'react'
 export default function Footer() {
   return (
     <footer>
-        <img src='https://placehold.co/600x400' alt='logo'/>
+        <img src='https://placehold.co/200x400' alt='logo'/>
         <div>
           <h4>Doormat Navigation</h4>
           <ul>
-            <li>
-                <a href='*'>
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href='*'>
-                    About
-                </a>
-            </li>
-            <li>
-                <a href='*'>
-                    Menu
-                </a>
-            </li>
-            <li>
-                <a href='*'>
-                    Reservations
-                </a>
-            </li>
-            <li>
-                <a href='*'>
-                    Order Online
-                </a>
-            </li>
-            <li>
-                <a href='*'>
-                    Login
-                </a>
-            </li>
+            <li><a href='*'>Home</a></li>
+            <li><a href='*'>About</a></li>
+            <li><a href='*'>Menu</a></li>
+            <li><a href='*'>Reservations</a></li>
+            <li><a href='*'>Order Online</a></li>
+            <li><a href='*'>Login</a></li>
           </ul>
         </div>
         <div>

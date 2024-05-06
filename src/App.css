@@ -1,38 +1,288 @@
-.App {
-  text-align: center;
+/* Nav */
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  gap: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: #333333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: end;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 927px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    background-color: #495E57;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-links.active a {
+    color: #EDEFEE;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav{
+    justify-content: space-evenly;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-item {
+  font-family: 'Karla', sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.nav-item:hover {
+  color: #495E57;
+  text-decoration: underline;
+}
+
+
+
+/* Homepage */
+
+/* Hero */
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #495E57;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 175px;
+  flex-wrap: wrap;
+}
+
+.banner-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
+}
+
+.banner-text h2 {
+  color: #F4CE14;
+  font-size: 64pt;
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+.banner-text h3 {
+  color: #EDEFEE;
+  font-size: 40pt;
+  font-family: 'Markazi Text', serif;
+  font-weight: normal;
+  margin: 0;
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+
+.banner-text p{
+  color: #EDEFEE;
+  font-size: 18pt;
+  font-family: 'Karla', sans-serif;
+  font-weight: normal;
+  margin: 0;
+  width: 250px;
+  text-align: justify;
+}
+
+.banner-image img{
+  width : 382px;
+  height: 382px;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 927px) {
+  .banner-image {
+    display: none;
+  }
+}
+
+.btn-reserve {
+  background-color: #F4CE14;
+  border: none;
+  color: #333333;
+  font-family: 'Karla', sans-serif;
+  font-size: 18pt;
+  border-radius: 16px;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.btn-reserve:active{
+  background-color: #EE9972;
+  color: #EDEFEE;
+}
+
+/* Highlights */
+
+.highlights-text-container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 150px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.highlights-text-container h2{
+  font-size: 64pt;
+  font-family: 'Markazi Text', serif;
+  color: #333333;
+  font-weight: 500;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.highlights-card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 821px) {
+  .highlights-card-container {
+    flex-direction: column;
+    gap: 20px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+}
+
+/* Card */
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 540px;
+  background-color: #EDEFEE;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card-title h3{
+  color: #000000;
+  font-size: 18px;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+}
+
+.card-title h4{
+  color: #EE9972;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 300;
+}
+
+.card-image{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.card-image img{
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-body p{
+  color: #495E57;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  line-height: 15pt;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  height: 93px;
+}
+
+.card-body button{
+  margin-left: 20px;
+  margin-top: 50px;
+  align-self: flex-start;
+  width: auto;
+  font-size: 16px;
+  font-weight: 300;
+  border: none;
+  cursor: pointer;
+}
+
+.card-body button:active{
+  color: #495E57;
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+footer h4 {
+  color: #333333;
+  font-family: 'Karla', sans-serif;
+  font-weight: bolder;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333333;
+}
+
+footer a:hover {
+  color: #495E57;
 }
