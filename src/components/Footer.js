@@ -1,18 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
     <footer>
         <img src='https://placehold.co/200x400' alt='logo'/>
         <div>
-          <h4>Doormat Navigation</h4>
+          <h4>Links</h4>
           <ul>
-            <li><a href='*'>Home</a></li>
-            <li><a href='*'>About</a></li>
-            <li><a href='*'>Menu</a></li>
-            <li><a href='*'>Reservations</a></li>
-            <li><a href='*'>Order Online</a></li>
-            <li><a href='*'>Login</a></li>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/'>About</Link></li>
+            <li><Link to='/'>Menu</Link></li>
+            <li><Link to='/booking'>Reservations</Link></li>
+            <li><Link to='/'>Order Online</Link></li>
+            <li><Link to='/'>Login</Link></li>
           </ul>
         </div>
         <div>

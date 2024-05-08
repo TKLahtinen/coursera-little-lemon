@@ -140,6 +140,7 @@ a {
   border-radius: 16px;
   margin-top: 20px;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 .btn-reserve:active{
@@ -260,29 +261,58 @@ a {
   font-weight: bold;
 }
 
+/* BookinForm */
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
 /* Footer */
 
 footer{
   display: flex;
   justify-content: center;
   gap: 60px;
+  background-color: #495E57;
+  margin-top: 20px;
+  padding: 10px;
 }
 
 footer h4 {
-  color: #333333;
+  color: #EDEFEE;
   font-family: 'Karla', sans-serif;
   font-weight: bolder;
+  font-size: 16pt;
+}
+
+footer p {
+  color: #EDEFEE;
+  font-family: 'Karla', sans-serif;
+  font-weight: normal;
+  font-size: 16pt;
 }
 
 footer ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  padding: 0;
+  font-size: 16pt;
 }
 
 footer a {
   text-decoration: none;
-  color: #333333;
+  color: #EDEFEE;
 }
 
 footer a:hover {
-  color: #495E57;
+  color: #EE9972;
 }

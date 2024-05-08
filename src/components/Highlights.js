@@ -3,6 +3,7 @@ import Card from './Card'
 import salad from '../assets/images/greek salad.jpg'
 import bruchetta from '../assets/images/bruschetta.jpg'
 import ldessert from '../assets/images/lemon dessert.jpg'
+import { Link } from 'react-router-dom'
 
 const dishes = {
     dish1: {
@@ -29,7 +30,9 @@ export default function Highlights() {
     <>
         <div className='highlights-text-container'>
             <h2>This weeks specials!</h2>
-            <button className='btn-reserve'>Online Menu!</button>
+            <Link to='/'>
+                <button className='btn-reserve'>Online Menu!</button>
+            </Link>
         </div>
         <div className='highlights-card-container'>
             <Card name={dishes.dish1.name} picture={dishes.dish1.picture} description={dishes.dish1.description} price={dishes.dish1.price}/>

@@ -9,7 +9,9 @@ export default function Hero() {
             <h2>Little Lemon</h2>
             <h3>Chicago</h3>
             <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-            <button className='btn-reserve'>Reserve a Table</button>
+            <Link to='/booking'>
+              <button className='btn-reserve'>Reserve a Table</button>
+            </Link>
         </div>
         <div className='banner-image'>
             <img src={bannerImage} />
