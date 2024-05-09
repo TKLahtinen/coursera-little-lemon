@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import footerLogo from '../assets/images/FooterLogo.png'
 
 export default function Footer() {
   return (
     <footer>
-        <img src='https://placehold.co/200x400' alt='logo'/>
+        <div className='footer-image-container'>
+          <img src={footerLogo} alt='logo'/>
+        </div>
         <div>
           <h4>Links</h4>
           <ul>
