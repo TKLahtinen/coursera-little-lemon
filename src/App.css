@@ -312,6 +312,14 @@ select, input{
   font-family: 'Karla', sans-serif;
 }
 
+.error-text{
+  color: red;
+  font-size: 14px;
+  font-family: 'Karla', sans-serif;
+  margin: 0px;
+  margin-top: -15px;
+}
+
 /* Confirmation */
 
 .confirmation-container{
