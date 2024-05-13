@@ -69,7 +69,7 @@ const BookingForm = ( {availableTimes, dispatchOnDateChange, submitData} ) => {
                   <option data-testid='occasion-option' key={index}>{choice}</option>
               ))}
           </select>
-          <button type="submit" onClick={handleSubmit} className='btn-reserve'>
+          <button type="submit" onClick={handleSubmit} className='btn-reserve' aria-label='On Click'>
             Make your reservation!
           </button>
       </form>

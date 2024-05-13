@@ -10,7 +10,7 @@ export default function Hero() {
             <h3>Chicago</h3>
             <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
             <Link to='/booking'>
-              <button className='btn-reserve'>Reserve a Table</button>
+              <button className='btn-reserve' aria-label='On Click'>Reserve a Table</button>
             </Link>
         </div>
         <div className='banner-image'>

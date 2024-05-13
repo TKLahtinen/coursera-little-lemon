@@ -9,7 +9,7 @@ const Confirmation = () => {
       <h2>Thank you for your reservation!</h2>
       <p>Your recervation has been received and is being booked.</p>
       <p>Welcome to enjoy our meals!</p>
-      <Link to='/'><button className='btn-reserve'>Back to homepage</button></Link>
+      <Link to='/'><button className='btn-reserve' aria-label='On Click'>Back to homepage</button></Link>
     </div>
   )
 }
