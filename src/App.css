@@ -261,6 +261,74 @@ a {
   font-weight: bold;
 }
 
+/* Testimonials */
+
+.testimonials-container{
+  display: flex;
+  background-color: #495E57;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.testimonials-container h2{
+  font-size: 64pt;
+  font-family: 'Markazi Text', serif;
+  color: #EDEFEE;
+  font-weight: 500;
+  margin: 0;
+}
+
+.testimonials-card-container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Testimonial card */
+
+.testimonial-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  height: 350px;
+  background-color: #EDEFEE;
+  border-radius: 16px;
+  margin: 20px;
+}
+
+.testimonial-card img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.testimonial-card h3{
+  color: #495E57;
+  font-size: 18px;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+}
+
+.testimonial-card p{
+  color: #495E57;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+/* About us */
+
+
 /* BookinForm */
 
 .form-container{
